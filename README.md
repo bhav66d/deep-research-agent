@@ -16,6 +16,14 @@ python main.py "your research question"
 * `--num-queries` `<int>` number of search queries (default 3)  
 * `--learnings` `"<previous finding 1>" "<finding 2>" …`  
 
+#### Research Modes & Their Purpose  
+
+| Mode | Represents | Best For |
+|------|------------|----------|
+| **fast** | Quick, surface-level scan (minimal depth & breadth) | Rapid fact-finding, time-sensitive checks, initial exploration |
+| **balanced** *(default)* | Moderate depth and breadth without recursion | General research tasks where you need solid coverage but not an exhaustive dive |
+| **comprehensive** | Exhaustive, multi-layer exploration with recursive sub-queries | Academic papers, detailed analyses, or any topic requiring full 360-degree coverage |
+
 Example:  
 ```bash
 python main.py "Impact of AI on healthcare" --mode comprehensive --num-queries 5
